@@ -17,8 +17,8 @@ Dự án này triển khai **thuật toán Q-Learning** trong **Reinforcement Le
 ## 🧠 Demo
 
 | 🚕 Taxi-v3 | ❄️ FrozenLake-v1 |
-|-----------|----------------|
-| [🎥 Xem Taxi Demo](https://github.com/PhungDinhQuangAnh/RL_Q_Learning/blob/main/Demo/Taxi-v3.webm?raw=true) | [🎥 Xem FrozenLake Demo](https://github.com/PhungDinhQuangAnh/RL_Q_Learning/blob/main/Demo/FrozenLake-v1.webm?raw=true) |
+|:-----------:|:----------------:|
+| <img src="https://github.com/PhungDinhQuangAnh/RL_Q_Learning/blob/main/Demo/Taxi-v3.gif" width="470"> | <img src="https://github.com/PhungDinhQuangAnh/RL_Q_Learning/blob/main/Demo/FrozenLake-v1.gif" width="470"> |
 
 ---
 
