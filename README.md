@@ -17,7 +17,12 @@ Trong dự án này, mình áp dụng **thuật toán Q-Learning**, một phươ
 ## 🧠 Demo
 
 | Taxi-v3               | FrozenLake-v1           |
-|||
+|## 🎮 Demo: Taxi & FrozenLake
+
+| 🚕 Taxi-v3 | ❄️ FrozenLake-v1 |
+|-----------|----------------|
+| [🎥 Xem Taxi Demo](https://github.com/PhungDinhQuangAnh/RL_Q_Learning/blob/main/Demo/Taxi-v3.webm?raw=true) | [🎥 Xem FrozenLake Demo](https://github.com/PhungDinhQuangAnh/RL_Q_Learning/blob/main/Demo/FrozenLake-v1.webm?raw=true) |
+
 ---
 ## 🎮 Môi trường sử dụng
 
