@@ -2,10 +2,10 @@ import numpy as np
 import gymnasium as gym
 import matplotlib.pyplot as plt
 
-# Initialize environment
+# Khởi tạo môi trường
 env = gym.make("Taxi-v3")
 
-# Initialize Q-table with size [num_state x num_action]
+# Tạo Q table kích thước: [num_state x num_action]
 q_table = np.zeros((env.observation_space.n, env.action_space.n))
 
 # Hyperparameters
@@ -18,7 +18,7 @@ num_episodes = 10000
 total_reward = 0
 rewards = []  # lưu tổng reward mỗi episode
 
-# Train
+# Huấn luyện
 for episode in range(num_episodes):
     state, info = env.reset()
     terminated = False
@@ -26,7 +26,7 @@ for episode in range(num_episodes):
     total_reward = 0
 
     while not (truncated or terminated):
-        # Epsilon-greedy strategy
+        # Epsilon-greedy
         if np.random.rand() < epsilon:
             action = env.action_space.sample()
         else:
@@ -35,16 +35,15 @@ for episode in range(num_episodes):
         next_state, reward, terminated, truncated, info = env.step(action)
         total_reward += reward
 
-        # Q-learning update
+    # Cập nhật q learning
         q_table[state, action] += alpha * (reward + gamma * np.max(q_table[next_state]) - q_table[state, action])
         state = next_state
 
-        # Break when terminated
         if terminated:
             print(f'Episode: {episode}')
             print("OK")
 
-    # Reduce epsilon to explore more
+    # Giảm epsilon để khám phá nhiều hơn
     if epsilon > epsilon_min:
         epsilon *= epsilon_decay
 
