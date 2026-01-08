@@ -29,9 +29,9 @@ for episode in range(num_test_episodes):
 
         if done:
             if reward == 1:
-                print("✅ Thắng rồi!")
+                print("Thắng rồi!")
             else:
-                print("💥 Rơi xuống hố.")
+                print("Rơi xuống hố.")
             break
 
 env.close()
