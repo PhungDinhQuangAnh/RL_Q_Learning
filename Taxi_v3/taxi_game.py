@@ -8,7 +8,7 @@ state, info = env.reset()
 pygame.init()
 pygame.display.set_caption("Taxi-v3 Game")
 
-# Ánh xạ phím sang hành động
+# Chuyển phím sang hành động
 KEY_TO_ACTION = {
     pygame.K_s: 0,  # Xuống
     pygame.K_w: 1,  # Lên
