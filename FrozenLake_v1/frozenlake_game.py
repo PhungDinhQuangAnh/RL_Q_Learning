@@ -9,7 +9,7 @@ state, _ = env.reset()
 pygame.init()
 pygame.display.set_caption("FrozenLake-v1 Game")
 
-# Mappings từ phím sang hành động:
+# Chuyển phím sang hành động:
 # 0: left, 1: down, 2: right, 3: up
 key_action = {
     pygame.K_LEFT: 0,
@@ -31,9 +31,9 @@ while running:
                 state = next_state
                 if terminated or truncated:
                     if reward == 1:
-                        print("✅ Chiến thắng!")
+                        print("Chiến thắng!")
                     else:
-                        print("💥 Thua rồi!")
+                        print("Thua rồi!")
                     state, _ = env.reset()
     # env.render() --> render_mode="human" tự hiển thị mỗi bước, không cần render thủ công
 
