@@ -1,4 +1,4 @@
-<h1 align="center">🤖 RL_Q_Learning</h1>
+<h1 align="center">RL_Q_Learning</h1>
 
 Dự án này triển khai **thuật toán Q-Learning** trong **Reinforcement Learning (Học tăng cường)** để huấn luyện agent trong hai môi trường cổ điển của **Gymnasium**:
 
