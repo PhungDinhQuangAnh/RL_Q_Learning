@@ -47,5 +47,3 @@ RL_Q_Learning/
     ├── frozenlake_game.py        # Mô phỏng trò chơi
     └── q_table.npy               # Bảng Q đã lưu
 </pre>
-
----
