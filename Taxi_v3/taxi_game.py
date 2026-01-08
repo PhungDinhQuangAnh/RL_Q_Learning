@@ -10,16 +10,16 @@ pygame.display.set_caption("Taxi-v3 Game")
 
 # Ánh xạ phím sang hành động
 KEY_TO_ACTION = {
-    pygame.K_s: 0,  # South
-    pygame.K_w: 1,  # North
-    pygame.K_d: 2,  # East
-    pygame.K_a: 3,  # West
-    pygame.K_e: 4,  # Pickup
-    pygame.K_q: 5   # Dropoff
+    pygame.K_s: 0,  # Xuống
+    pygame.K_w: 1,  # Lên
+    pygame.K_d: 2,  # Đông
+    pygame.K_a: 3,  # Tây
+    pygame.K_e: 4,  # Đón khách
+    pygame.K_q: 5   # Trả khách
 }
 print("=== HƯỚNG DẪN ===")
-print("W: Lên | S: Xuống | A: Trái | D: Phải")
-print("E: Đón khách | Q: Trả khách")
+print("w: Lên | s: Xuống | a: Trái | d: Phải")
+print("e: Đón khách | q: Trả khách")
 
 running = True
 while running:
@@ -34,7 +34,7 @@ while running:
                 state = next_state
                 print(f"Action: {action}, Reward: {reward}")
                 if terminated:
-                    print("🚕 Hành trình hoàn tất! Reset lại game.")
+                    print("Hành trình hoàn tất! Reset lại game.")
                     state, info = env.reset()
 
 env.close()
