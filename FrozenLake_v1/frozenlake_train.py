@@ -22,7 +22,7 @@ for episode in range(num_episodes):
     truncated = False
 
     while not truncated:
-        # Epsilon-greedy strategy
+        # Epsilon-greedy
         if np.random.rand() < epsilon:
             action = env.action_space.sample()
         else:
@@ -34,15 +34,15 @@ for episode in range(num_episodes):
         # Cập nhật reward shaping
         if terminated:
             if reward == 1.0:
-                reward = 1      # Goal
+                reward = 1      # Đích đến
                 print(f'Episode:{episode} Step:{i} --> OK')
             else:
-                reward = -1     # Hole
+                reward = -1     # Hố
         else:
             reward = -0.01      # Bước thường
         # =====================
 
-        # Q-learning update
+        # Cập nhật q learning
         q_table[state, action] += alpha * (reward + gamma * np.max(q_table[next_state]) - q_table[state, action])
 
         state = next_state
